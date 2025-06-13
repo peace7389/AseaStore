@@ -1,10 +1,10 @@
-
 function writeHello() {
+  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
 const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('hello');
 
     if (!sheet) {
       // Create the sheet if it does not exist
-      sheet = spreadsheet.insertSheet('3.screenPageView');
+      sheet = spreadsheet.insertSheet('hello');
     } else {
       // Clear the existing data
       sheet.clear();
@@ -13,7 +13,6 @@ const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('hello');
 
 sheet.getRange("A1").setValue("Hello, world!");
 }
-
 
 
 
