@@ -1,1 +1,8 @@
 
+SELECT
+user_pseudo_id,
+collected_traffic_source.manual_source,
+collected_traffic_source.manual_medium
+FROM `lively-iris-436606-t5.analytics_483732128.events_*` 
+WHERE event_name = 'first_visit'
+GROUP BY 1 , 2 , 3
