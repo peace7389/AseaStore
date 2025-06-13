@@ -1,4 +1,43 @@
 
+function writeHello() {
+const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('hello');
+
+    if (!sheet) {
+      // Create the sheet if it does not exist
+      sheet = spreadsheet.insertSheet('3.screenPageView');
+    } else {
+      // Clear the existing data
+      sheet.clear();
+    }
+
+
+sheet.getRange("A1").setValue("Hello, world!");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 SELECT
 user_pseudo_id,
 collected_traffic_source.manual_source,
